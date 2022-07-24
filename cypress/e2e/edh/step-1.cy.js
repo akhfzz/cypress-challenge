@@ -18,5 +18,11 @@ describe('Login to EDH website', function () {
     cy.get('.mat-select-value >.mat-select-placeholder').click()
     cy.get('.mat-select-panel > #mat-option-6').click()
     cy.get('.mat-success').click()
+    cy.wait(2000)
+  })
+
+  it('sidebar', () => {
+    cy.get('.mat-mini-fab > .mat-button-wrapper > .mat-icon').wait(2000).click({force:true})
+
   })
 })
